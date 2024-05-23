@@ -1,0 +1,45 @@
+/* Dropdown container styles */
+.dropdown {
+    position: relative;
+  }
+  
+  /* Dropdown toggle button styles */
+  .dropdown-toggle {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown menu styles */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4066ff;
+    /* border-radius: 4px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  /* Dropdown menu item styles */
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: black;
+    width: 100%;
+  }
+  
+  /* Hover effect for dropdown menu items */
+  .dropdown-menu li:hover {
+    background-color: #4c6cee;
+    color: white;
+  }
+  
