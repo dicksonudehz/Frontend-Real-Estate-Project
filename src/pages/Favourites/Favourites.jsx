@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import "../../properties/properties.css";
 import useProperties from "../../hooks/useProperties";
 import { PuffLoader } from "react-spinners";
 import PropertiesCards from "../../components/PropertiesCard/PropertiesCards";
+// import "../properties/properties.css";
+import './favorites.css'
 import UserDetailContext from "../../context/UserDetailContext";
 
 const Favourites = () => {
@@ -42,9 +43,7 @@ const Favourites = () => {
             //   ))
             data &&
               data.residencies
-                .filter((property) =>
-                favourites?.includes(property.id)
-                )
+                .filter((property) => favourites?.includes(property.id))
                 .filter(
                   (property) =>
                     property.title
