@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import "../Properties/properties.css";
+// import "../Properties/properties.css";
+import './bookings.css'
 import useProperties from "../../hooks/useProperties";
 import { PuffLoader } from "react-spinners";
 import PropertiesCards from "../../components/PropertiesCard/PropertiesCards";
