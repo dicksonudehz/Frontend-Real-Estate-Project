@@ -1,5 +1,5 @@
 import { Navigate, useNavigate } from "react-router-dom";
-import "./Profilemenu.css";
+import "./profilemenu.css";
 import { useState } from "react";
 import { IoIosContact } from "react-icons/io";
 import { Avatar, Button, Menu } from "@mantine/core";
