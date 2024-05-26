@@ -24,8 +24,6 @@ const Properties = () => {
       />
     </div>;
   }
-
-  
   return (
     <div className="wrapper">
       <div className="flexColCenter paddings innerWidth properties-container">
@@ -43,8 +41,6 @@ const Properties = () => {
               property.country.toLowerCase().includes(filter.toLocaleLowerCase()) 
             ).map((card, i) => <PropertiesCards card={card} key={i} />)
           }
-           
-
         </div>
       </div>
     </div>
