@@ -13,7 +13,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         redirect_uri: "https://backend-real-estate-six.vercel.app",
       }}
       audience="http://localhost:8000"
-      // audience='this is the unique identifier'
       scope="openid profile email"
     >
       <App />
