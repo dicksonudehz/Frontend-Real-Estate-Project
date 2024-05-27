@@ -10,7 +10,6 @@ const AddPropertyModel = ({ opened, setOpened }) => {
   const [active, setActive] = useState(0);
   const { user } = useAuth0();
 
-console.log("user email", user  && user.email)
   const [addProperty, setAddProperty] = useState({
     title: "",
     description: "",

@@ -10,9 +10,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       domain="dev-m2f3ppmzvnre585o.us.auth0.com"
       clientId="ihSZBYYkLrkknMZj9UiZGB4CRRaN0MJK"
       authorizationParams={{
-        redirect_uri: "https://frontend-real-estate-project.vercel.app/",
+        redirect_uri: "https://backend-real-estate-six.vercel.app/",
       }}
-      audience='this is the unique identifier'
+      audience='https://backend-real-estate-six.vercel.app'
       scope="openid profile email"
     >
       <App />

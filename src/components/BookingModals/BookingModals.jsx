@@ -13,7 +13,6 @@ const BookingModals = ({ opened, setOpened, email, propertyId }) => {
     userDetails: { token},
     setUserDetails,
   } = useContext(UserDetailContext);
-  console.log(userDetails)
 
   const [value, setValue] = useState(null);
   const handleVisitSuccess = () => {
