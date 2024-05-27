@@ -25,7 +25,7 @@ const Layout = () => {
     const getTokenAndRegsiter = async () => {
       const res = await getAccessTokenWithPopup({
         authorizationParams: {
-          audience: "this is the unique identifier",
+          audience: "https://backend-real-estate-six.vercel.app",
           scope: "openid profile email",
         },
       });
