@@ -25,7 +25,7 @@ const Layout = () => {
     const getTokenAndRegsiter = async () => {
       const res = await getAccessTokenWithPopup({
         authorizationParams: {
-          audience: "https://backend-real-estate-six.vercel.app",
+          audience: "http://localhost:8000",
           scope: "openid profile email",
         },
       });
