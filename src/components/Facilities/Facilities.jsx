@@ -55,7 +55,7 @@ const Facilities = ({
       createResidency(
         {
           ...propertyDetails,
-          facilities: { bedrooms, parkings, bathrooms }
+          facilities: { bedrooms, parkings, bathrooms },
         },
         token
       ),
@@ -76,7 +76,7 @@ const Facilities = ({
           bathrooms: 0,
         },
         image: null,
-        userEmail: user&& user.email,
+        userEmail: user && user.email,
       });
       setOpened(false);
       setActive(0);

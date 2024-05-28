@@ -153,15 +153,15 @@ export const getAllBooking = async (email, token) => {
 
 export const createResidency = async (
   data,
-  title,
-  description,
-  price,
-  address,
-  country,
-  city,
-  facilities,
-  image,
-  userEmail,
+  // title,
+  // description,
+  // price,
+  // address,
+  // country,
+  // city,
+  // facilities,
+  // image,
+  // userEmail,
   token
 ) => {
   console.log(data);
