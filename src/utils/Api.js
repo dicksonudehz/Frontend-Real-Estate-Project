@@ -15,7 +15,7 @@ export const getAllProperties = async () => {
     if (response.status === 400 || response.status === 500) {
       throw response.data;
     }
-    return response.data;
+    return response.data; 
   } catch (error) {
     toast.error("something went wrong from api get all properties routes");
     throw error;
@@ -153,15 +153,15 @@ export const getAllBooking = async (email, token) => {
 
 export const createResidency = async (
   data,
-  title,
-  description,
-  price,
-  address,
-  country,
-  city,
-  facilities,
-  image,
-  userEmail,
+  // title,
+  // description,
+  // price,
+  // address,
+  // country,
+  // city,
+  // facilities,
+  // image,
+  // userEmail,
   token
 ) => {
   console.log(data);
