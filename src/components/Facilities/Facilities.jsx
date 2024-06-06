@@ -49,7 +49,7 @@ const Facilities = ({
     userDetails: { token },
   } = useContext(UserDetailContext);
   const { refetch: refetchProperties } = useProperties();
-
+  console.log(user);
   const { mutate, isLoading } = useMutation({
     mutationFn: () =>
       createResidency(
@@ -76,7 +76,7 @@ const Facilities = ({
           bathrooms: 0,
         },
         image: null,
-        userEmail: user && user.email,
+        userEmail: user 
       });
       setOpened(false);
       setActive(0);
