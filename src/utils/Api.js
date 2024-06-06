@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 export const api = axios.create({
   // baseURL: "http://localhost:8000/api"
-  baseURL: "https://backend-real-estate-six.vercel.app/api"
+  baseURL: "https://backend-real-estate-six.vercel.app/api",
 });
 
 export const getAllProperties = async () => {
@@ -15,7 +15,7 @@ export const getAllProperties = async () => {
     if (response.status === 400 || response.status === 500) {
       throw response.data;
     }
-    return response.data; 
+    return response.data;
   } catch (error) {
     toast.error("something went wrong from api get all properties routes");
     throw error;
@@ -164,7 +164,7 @@ export const createResidency = async (
   // userEmail,
   token
 ) => {
-  console.log(data);
+  console.log("String", data);
   try {
     const res = await api.post(
       `/residency/create`,

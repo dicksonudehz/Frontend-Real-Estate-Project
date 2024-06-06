@@ -50,11 +50,15 @@ const Facilities = ({
   } = useContext(UserDetailContext);
   const { refetch: refetchProperties } = useProperties();
   console.log(user);
+  console.log("email: ", user.email)
+  console.log("nickname: ", user.nickname)
+  console.log("token:", token)
   const { mutate, isLoading } = useMutation({
     mutationFn: () =>
       createResidency(
         {
           ...propertyDetails,
+          userEmail:user.email,
           facilities: { bedrooms, parkings, bathrooms },
         },
         token
